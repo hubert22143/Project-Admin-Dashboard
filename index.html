@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
+    <div class="wrapper">
     <div class="left-side-nav">
         <div class="side-header">
             <h2>Dashboard</h2>
@@ -65,11 +67,241 @@
                 </ul>
                 </nav>
         </div>
+        <main>
+            <div class="header-content">
+                <div class="upper">
+                    <div class="search-input">
+                        <input type="search" placeholder="Type...." class="search-box" />
+                        <div class="search-icon">
+                          <img src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height='24' width='24'%3E%3Ctitle%3Etext-search%3C/title%3E%3Cpath d='M19.31 18.9L22.39 22L21 23.39L17.88 20.32C17.19 20.75 16.37 21 15.5 21C13 21 11 19 11 16.5C11 14 13 12 15.5 12C18 12 20 14 20 16.5C20 17.38 19.75 18.21 19.31 18.9M15.5 19C16.88 19 18 17.88 18 16.5C18 15.12 16.88 14 15.5 14C14.12 14 13 15.12 13 16.5C13 17.88 14.12 19 15.5 19M21 4V6H3V4H21M3 16V14H9V16H3M3 11V9H21V11H18.97C17.96 10.37 16.77 10 15.5 10C14.23 10 13.04 10.37 12.03 11H3Z' /%3E%3C/svg%3E"
+                            alt="Search Icon"
+                          />
+                        </div>
+                      </div>
+                      
+                    <div class="user-setup">
+                        <div class="notify-button">
+                            <svg id="svgimg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"><title>bell-ring</title><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" /></svg>
+                        </div>
+                        <div class="profile-image">
+                            <img src="avatar.new.png" id="gif-image">
+                        </div>
+                        <div class="profile-name">
+                            <h1><i>Baki Hanma</i></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="user-section">
+                        <div class="user-image">
+                            <img src="avatar.new.png" id="user-image">
+                        </div>
+                        <div class="user-welcome-text">
+                            <em>Hi there,</em>
+                            <p><b>Baki Hanma (@Baki)</b></p>
+                        </div>
+                    </div>
+                    <div class="user-action">
+                        <button class="action">New</button>
+                        <button class="action">Upload</button>
+                        <button class="action">Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="header-projects">
+                    <h3>Your Projects</h3>
+                    <div class="header-projects-container">
+                        <div class="header-project-one">
+                            <div class="header-project-text">
+                                <h4>Super cool project</h4>
+                                <div class="header-project-icons">
+                                   <div class="header-project-icone-one">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                                </div>
+                                <div class="header-project-icone-two">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                                </div>
+                                    <div class="header-project-icone-three">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>share</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="header-text-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus sapien ex, sit amet interdum metus vehicula eu. Maecenas facilisis quam justo, ut vestibulum mauris aliquet et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in turpis at nulla auctor ullamcorper.
+                            </div>
+                        </div>
+                        <div class="header-project-two">
+                            <div class="header-project-text">
+                                <h4>Less cool project</h4> 
+                                <div class="header-project-icons">
+                                    <div class="header-project-icone-one">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                                 </div>
+                                 <div class="header-project-icone-two">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                                 </div>
+                                     <div class="header-project-icone-three">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>share</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg>
+                                 </div>
+                                 </div>
+                            </div>
+                            <div class="header-text-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus sapien ex, sit amet interdum metus vehicula eu. Maecenas facilisis quam justo, ut vestibulum mauris aliquet et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in turpis at nulla auctor ullamcorper.
+                            </div>
+                            
+                        </div>
+                        <div class="header-project-third">
+                            <div class="header-project-text">
+                                <h4>Impossible App</h4> 
+                                <div class="header-project-icons">
+                                    <div class="header-project-icone-one">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                                 </div>
+                                 <div class="header-project-icone-two">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                                 </div>
+                                     <div class="header-project-icone-three">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>share</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg>
+                                 </div>
+                                 </div>
+                            </div>
+                            <div class="header-text-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus sapien ex, sit amet interdum metus vehicula eu. Maecenas facilisis quam justo, ut vestibulum mauris aliquet et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in turpis at nulla auctor ullamcorper.
+                            </div>
+                        </div>
+                        <div class="header-project-fourth">
+                            <div class="header-project-text">
+                                <h4>Easy Peasy App</h4>
+                                <div class="header-project-icons">
+                                    <div class="header-project-icone-one">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                                 </div>
+                                 <div class="header-project-icone-two">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                                 </div>
+                                     <div class="header-project-icone-three">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>share</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg>
+                                 </div>
+                                 </div>
+                            </div>
+                            <div class="header-text-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus sapien ex, sit amet interdum metus vehicula eu. Maecenas facilisis quam justo, ut vestibulum mauris aliquet et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in turpis at nulla auctor ullamcorper.
+                            </div>
+                        </div>
+                        <div class="header-project-fifth">
+                            <div class="header-project-text">
+                                <h4>Add Blocker</h4> 
+                                <div class="header-project-icons">
+                                    <div class="header-project-icone-one">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                                 </div>
+                                 <div class="header-project-icone-two">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                                 </div>
+                                     <div class="header-project-icone-three">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>share</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg>
+                                 </div>
+                                 </div>
+                            </div>
+                            <div class="header-text-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus sapien ex, sit amet interdum metus vehicula eu. Maecenas facilisis quam justo, ut vestibulum mauris aliquet et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in turpis at nulla auctor ullamcorper.
+                            </div>
+                        </div>
+                        <div class="header-project-sixth">
+                            <div class="header-project-text">
+                                <h4>Money Maker</h4> 
+                                <div class="header-project-icons">
+                                    <div class="header-project-icone-one">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>star-plus-outline</title><path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" /></svg>
+                                 </div>
+                                 <div class="header-project-icone-two">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>eye-plus-outline</title><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" /></svg>
+                                 </div>
+                                     <div class="header-project-icone-three">
+                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="42px" width="42px"><title>share</title><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" /></svg>
+                                 </div>
+                                 </div>
+                            </div>
+                            <div class="header-text-info">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus sapien ex, sit amet interdum metus vehicula eu. Maecenas facilisis quam justo, ut vestibulum mauris aliquet et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in turpis at nulla auctor ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="header-project-right-section">
+                    <h3>Announcements</h3>
+                    <div class="annoucements-top-section">
+                        <div class="annoucement-maintenance">
+                            <div class="annoucement-header"><em>Site Maintenance</em></div>
+                            <div class="annoucement-text">
+                                Sed in turpis at nulla auctor ullamcorper. Donec ullamcorper aliquet ante, sed feugiat mauris luctus ac. Nam mollis diam sed convallis aliquam. In in lacus ipsum. 
+                            </div>
+                        </div>
+                        <div class="breaker">
+                                
+                        </div>
+                        <div class="annoucement-community">
+                            <div class="annoucement-header">Community Share Day</div>
+                            <div class="annoucement-text">
+                                Donec euismod arcu id accumsan varius. Phasellus et maximus quam, at finibus ipsum. Nulla sodales risus elit, eget lobortis diam efficitur sit amet.
+                            </div>
+                        </div>
+                        <div class="breaker">
+                                
+                        </div>
+                        <div class="annoucement-policy">
+                            <div class="annoucement-header"><em>Updated Privacy Policy</em></div>
+                            <div class="annoucement-text">Aliquam in sem nulla. Morbi congue urna ac dictum pellentesque. Nullam tincidunt, mauris quis consectetur hendrerit, nulla mauris efficitur enim, id condimentum libero erat nec augue</div>
+                        </div>
+                    </div>
+                    
+                    <div class="Trending">
+                        Trending
+                    </div>
+                    <div class="trending-down-section">
+                        <div class="trending-one">
+                            <div class="trending-image">
+                                <img src="baki_hanma_1.jpg" height="65px" width="65px">
+                            </div>
+                            <div class="trending-username">
+                                @certainlytrustworthy
+                                <p id="trending-text">Need a job? Start today! 100$ per hour simple as that! Dm me for more information!</p>
+                            </div>
+                        </div>
+                        <div class="trending-two">
+                            <div class="trending-image">
+                                <img src="baki_hanma_3.jpg" height="65px" width="65px">
+                            </div>
+                            <div class="trending-username">
+                                @friendlyguy
+                                <p id="trending-text">Treat humans equally!</p>
+                            </div>
+                        </div>
+                        <div class="trending-third">
+                            <div class="trending-image">
+                                <img src="baki_hanma_3.jpg" height="65px" width="65px">
+                            </div>
+                            <div class="trending-username">
+                                @hypothetically
+                                <p id="trending-text">This site feels sooo dead...</p>
+                            </div>
+                        </div>
+                        <div class="trending-fourth">
+                            <div class="trending-image">
+                                <img src="baki_hanma_4.jpg" height="65px" width="65px">
+                            </div>
+                            <div class="trending-username">
+                                @justdoit
+                                <p id="trending-text">Imagine using this site for real looool...</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-    <main>
-        <div class="header">
-            
-        </div>
-    </main>
+</div>
 </body>
 </html>

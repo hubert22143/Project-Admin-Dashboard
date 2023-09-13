@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,28 +7,32 @@
     text-decoration: none;
 }
 body{
-    font-size: 1rem;
+    font-size: 2rem;
     height: 100%;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif;
 }
 .side-header{
-    font-size: 2rem;
+    min-width: 10%;
+    min-height: 10%;
 }
 .left-side-nav{
-    display: grid;
-    grid-template-rows: 1fr 4fr 2fr;
-    grid-gap: 5px;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    width: 30%;
+    width: clamp(5%,20%,40%);
     background-color: lightblue;
     align-items: center;
 }
 a,h2{
     color: white;
 }
+h4{
+    font-size: 2rem;
+}
 .side-header{
-    grid-row: 1 / 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,30 +40,28 @@ a,h2{
     font-size: 2rem;
 }
 .side-nav-grid{
-    display: grid;
-    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
 ul.side-nav-grid-user{
-    display: grid;
-    grid-template-rows: repeat(6 , 1fr);
-    text-align: center;
-    grid-row: 1 / 3;
-    place-items: center;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 70%;
+    justify-content: center;
+    align-items: center;
 }
 .side-nav-grid-settings{
-    text-align: center;
-    grid-row: 3 / 4;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 30%;
+    justify-content: center;
+    align-items: center;
 }
-
 li:hover {
     background-color: rgba(255, 0, 0, 0.3); 
-    transform: scale(1.4);
+    transform: scale(1.03);
 }
 li > a {
     font-size: 2rem;
@@ -71,7 +74,12 @@ ul.side-nav-grid-user > li > a:hover{
 }
 ul.side-nav-grid-settings > li > a:hover{
     color: rgba(255, 105, 180, 0.5);
-
+}
+ul.side-nav-grid-user > li { 
+    flex-grow: 1;
+}
+.side-nav-grid-settings > li {
+    flex-grow: 1;
 }
 .svg-container{
     display: flex;
@@ -80,4 +88,236 @@ ul.side-nav-grid-settings > li > a:hover{
     width: 100%;
     height: 100%;
     font-size: 2rem;
+}
+.wrapper{
+    display: flex;
+    flex: 1;
+}
+main{
+    height: 100vh;
+    width: calc(100% - clamp(5%, 20%, 40%));
+}
+.header-content{
+min-height: 30vh;
+background-color: #F5FEFD;
+}
+.upper{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+input[type="search"]{
+    min-width: 70%;
+    border-radius: 20px;
+    background-color: RGB(192, 192, 192);
+    padding: 12px;
+    transition: transform 0.3s ease;
+}
+input[type="search"]:hover{
+    transform: scale(1.3);
+}
+.search-input{
+    display: flex;
+    width: 60%;
+}
+.user-setup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 12px;
+    height: 100%;
+}
+.down{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+.user-section{
+    display: flex;
+    width: 40%;
+}
+.user-action{
+    display: flex;
+    width: 60%;
+}
+.action{
+    margin: 1rem;
+    flex-grow: 1;
+}
+.profile-name{
+    font-size: 1vw;
+}
+button.action{
+color: white;
+background-color: lightblue;
+font-size: 1.5vw;
+padding: 1rem 2rem;
+border: none;
+border-radius: 20px;
+}
+button.action:hover{
+    cursor: pointer;
+    background-color: rgb(173,216,230,70%);
+}
+.header-main{
+    min-height: 70vh;
+    background-color: rgb(135,141,146,30%);
+    padding: 40px;
+    display: flex;
+}
+#gif-image{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+#svgimg{
+    margin-right: 1rem;
+}
+.profile-image{
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+}
+.search-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-box {
+    max-width: 100%;
+    min-width: 20%;
+    padding-right: 40px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-icon {
+    margin-left: -60px; /* Position the icon to the right */
+  }
+  
+  .search-icon img {
+    height: 24px;
+    width: 24px;
+  }
+.profile-image img{
+    width: 92px;
+    height: 72px;
+    display: block;
+    border: 1px solid ghostwhite;
+}
+#user-image{
+    max-width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+.user-welcome-text{
+    font-size: clamp(10%,80%,80%);
+}
+.header-projects{
+    width: 75%;
+    height: 100%;
+}
+.header-projects-container{
+    grid-template-columns: repeat(2, minmax(250px,1fr));
+    grid-template-rows: repeat(3, minmax(250px,1fr));
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 10px
+}
+.header-project-one,.header-project-two,.header-project-third,
+.header-project-fourth,.header-project-fifth,.header-project-sixth{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    border-left: 20px solid orange;
+    border-radius: 15px;
+    background-color: #F5FEFD;
+    display: flex;
+    flex-grow: 1;
+}
+.header-text-icons{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    text-align: right;
+
+}
+.header-project-right-section{
+    margin-left: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.annoucements-top-section{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: #F5FEFD;
+    border-radius: 15px;
+    min-height: 45%;
+    padding: 25px;
+}
+.trending-down-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5FEFD;
+    border-radius: 15px;
+    min-height: 45%;
+    padding: 25px;
+}
+.Trending{
+    margin-top: 0.5rem;
+}
+.annoucement-maintenance,.annoucement-community,.annoucement-policy{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+.annoucement-text{
+    font-size: 0.8rem;
+    color: gray;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.header-project-text{
+    width: 100%;
+    height: 100%;
+    font-size: 1vw;
+}
+.header-text-info{
+    width: 100%;
+    color: gray;
+    font-size: 0.9rem;
+}
+.header-project-icons{
+    display: flex;
+}
+.header-project-icone-two{
+    margin: 0 10px
+}
+.breaker{
+    height: 1px;
+    border: 1px solid rgb(128,128,128,20%);
+    margin: 10px;
+}
+.trending-one,.trending-two,.trending-third,.trending-fourth{
+display: flex;
+}
+img{
+    border-radius: 50%;
+}
+.trending-username{
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 20px;
+}
+#trending-text{
+    color: gray;
 }
