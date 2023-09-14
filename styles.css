@@ -196,7 +196,7 @@ button.action:hover{
   }
   
   .search-icon {
-    margin-left: -60px; /* Position the icon to the right */
+    margin-left: -60px;
   }
   
   .search-icon img {
@@ -320,4 +320,11 @@ img{
 }
 #trending-text{
     color: gray;
+}
+svg{
+    cursor: pointer;
+}
+svg:hover{
+    background-color: gray;
+    border-radius: 5px;
 }
